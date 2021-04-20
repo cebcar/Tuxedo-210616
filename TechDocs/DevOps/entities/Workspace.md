@@ -24,11 +24,9 @@ For information about creating issues in the correct Repo Project, see [Create I
 - New Issues: to be moved to one of pipelines Later, Epics or Grooming
 - Later: Issues and Epics not yet in implementation planning stages
 - Epics: active Epics, in roughly anticipated development order
-  - An Epic that stands alone as an Issue (has no existing or planned open Issues)<br/>
-    may be handled as an Issue and moved ahead
 - Grooming: issues to plan, estimate and move to Product Backlog; roughly prioritized
-- Product Backlog: upcoming Issues that have been reviewed, estimated, and prioritized top-to-bottom
-- Sprint Backlog: issues scheduled for current Sprint / Milestone, prioritized top-to-bottom
+- Product Backlog: upcoming Issues that have been reviewed, estimated, and prioritized
+- Sprint Backlog: issues scheduled for current Sprint / Milestone, prioritized
 - In Progress: issues currently being worked on
 - Review: complete pending review and feedback
 - Done: issues tested and ready to be deployed to production

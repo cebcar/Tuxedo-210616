@@ -22,7 +22,6 @@ shell tool @ /usr/bin/git<br/>
 ### **Git Shortcuts**<br/>
 
 ## Using Git<br/>
-
 ### Tag
 - on clean master branch:
   - create annotated tag (requires comment)

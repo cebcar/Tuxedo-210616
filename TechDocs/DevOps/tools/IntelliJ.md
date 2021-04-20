@@ -146,8 +146,8 @@ ${TOOLTYPE} @ ${LOCATION}<br/>
 - [ + ] Highlight files from non-active changelist
 
 #### Issue Navigation
-  *click on IntelliJ issue link to show matching issue in GitHub*
-  - issue pattern: &lt;ProjectName&gt;-([\d]+)
+*click on IntelliJ issue link to show matching issue in GitHub*
+- issue pattern: &lt;ProjectName&gt;-([\d]+)
   - link to GitHub issue: https://github.com/cebcar/DevOps/issues/$1
 
 #### Git

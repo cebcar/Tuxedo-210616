@@ -176,17 +176,16 @@ ${TOOLTYPE} @ ${LOCATION}<br/>
 */TODO/ extraneous backslashes sometimes appear in Tools content*
 
 #### Tasks
-
 - Changelist name format: ${project}-#${id} ${summary}
 - Feature branch name format: &lt;pr&gt;${number}-${summary}
   - [x] Lowercased
   - replace spaces with '-'
 
-##### Servers: server GitHub
+##### Tasks: Servers: server GitHub
 - add Server GitHub
 - connect to server GitHub
 - General: provide credentials to connect to GitHub project; test
-- Commit Message: &lt;pr&gt;${number}-${summary}
+- Commit Message: &lt;pr&gt;#${number}-${summary}| 
 
 ## IntelliJ Customization &amp; Automation
 
@@ -261,6 +260,10 @@ Features Include:
 - from Preferences : Tools : Tasks : Servers :
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
+  
+#### configure VCS-related tools
+- configure [Tools: Tasks](#tasks)
+- configure [Tools: Servers: server GitHub][Tools: Tasks](#tasks-servers-server-github)
 
 #### commit to Version Control
 - Tag and Commit

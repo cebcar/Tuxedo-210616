@@ -184,7 +184,7 @@ ${TOOLTYPE} @ ${LOCATION}<br/>
 - add Server GitHub
 - connect to server GitHub
 - General: provide credentials to connect to GitHub project; test
-- Commit Message: &lt;pr&gt;#${number}-${summary}| 
+- commit message: &lt;project&gt;#${number}-${summary}| 
 
 ## IntelliJ Customization &amp; Automation
 

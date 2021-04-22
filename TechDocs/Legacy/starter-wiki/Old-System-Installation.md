@@ -35,7 +35,7 @@ Accessor: if indicated: customize for external partition
 - create folder ~/Dev
 - for repositories DevSupport, Accessor, Punkin:
   - git clone https://github.com/carolclark/<Repository>.git ~/Dev/<Repository>
-  - can copy repo name from github site
+  - can copy repo name from GitHub site
   - build Cdoc targets
 #### System Preferences
 - configure, except TimeMachine

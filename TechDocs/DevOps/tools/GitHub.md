@@ -32,7 +32,7 @@ WebApp @ https://github.com<br/>
 *categories shown with no content are not now being used*
 - Options
   - Settings
-    - if public, can add social image (photo or github avatar?)<br/><br/>
+    - if public, can add social image (photo or GitHub avatar?)<br/><br/>
   - Features (cebcar settings)
     - [-] **Wikis**
     - [+] **Restrict editing to users in teams with push access only**

@@ -26,7 +26,7 @@
         - **Update &lt;workingBranch&gt;**
       - } **push branch**: on &lt;branch&gt;: Compare With &lt;remote&gt;; push &lt;branch&gt;
 <br/><br/>
-    - ***Update &lt;workingBranch&gt; Branch***
+    - ***Update &lt;workingBranch&gt;***
     - } **merge to `main`** *merge &lt;branch&gt; into main line of development*
       - checkout main; preview merge: &lt;branch-to-merge&gt;: Show Differences
       - merge to main: `git merge --no-ff &lt;branch&gt;`
@@ -35,15 +35,14 @@
 <br/><br>
 - } **Task/branch**: close active Task; switch to default Task, removing just-closed changelist
 
-### Procedures
+#### Procedures
 
-#### ***Update Main Branch***
-- checkout `main` branch; `git status; git branch --no-merged`
-- git fetch (rcF); if changelists clean: done
-  - else: origin/main: Diff with Working Tree to get changes(?); commit and push main
+*Update main branch* from origin/main
+- checkout `main` branch; git fetch (rcF); if changelists clean: done
+- else: origin/main: Diff with Working Tree to get changes(?); commit; push main
 
-#### ***Update &lt;workingBranch&gt; (From Main)***
-- ***Update Main Branch***; git fetch (rcF)
-- if changed: checkout &lt;workingBranch&gt;; preview merge (main:cw); `git merge --no-ff main`; commit; push
+*Update &lt;workingBranch&gt;* from origin/main
+- *Update Main Branch*; if changelists were clean: done
+- else: checkout &lt;workingBranch&gt;; preview merge (main:cw); `git merge --no-ff main`; commit; push
 
 <button onclick="window.print()">`Print Button`</button>

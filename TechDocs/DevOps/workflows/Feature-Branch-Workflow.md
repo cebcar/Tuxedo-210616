@@ -13,18 +13,18 @@
 <br/><br/>
       - ***Update &lt;workingBranch&gt;***
       - while **push branch** {
-        - verify matching active branch
-          - while **commit** {
-            - while **cache** {
-              - test / code / test
-              - diff local changes
-              - add changed files as indicated (ocA)
-            - } **cache**
-            - Inspect
-            - Compare with original (diff)
-          - } **commit**: commit changes
-          - **Update &lt;workingBranch&gt;**
-        - } **push branch**: on &lt;branch&gt;: Compare With &lt;remote&gt;; push &lt;branch&gt;
+      - verify matching active branch
+        - while **commit** {
+          - while **cache** {
+            - test / code / test
+            - diff local changes
+            - add changed files as indicated (ocA)
+          - } **cache**
+          - Inspect
+          - Compare with original (diff)
+        - } **commit**: commit changes
+        - **Update &lt;workingBranch&gt;**
+      - } **push branch**: on &lt;branch&gt;: Compare With &lt;remote&gt;; push &lt;branch&gt;
 <br/><br/>
     - ***Update &lt;workingBranch&gt; Branch***
     - } **merge to `main`** *merge &lt;branch&gt; into main line of development*
@@ -39,10 +39,11 @@
 
 #### ***Update Main Branch***
 - checkout `main` branch; `git status; git branch --no-merged`
-- git fetch (rcF); if changed: origin/main: Diff with Working Tree to get changes(?); commit and push main
+- git fetch (rcF); if changelists clean: done
+  - else: origin/main: Diff with Working Tree to get changes(?); commit and push main
 
 #### ***Update &lt;workingBranch&gt; (From Main)***
- - ***Update Main Branch***; git fetch (rcF)
+- ***Update Main Branch***; git fetch (rcF)
 - if changed: checkout &lt;workingBranch&gt;; preview merge (main:cw); `git merge --no-ff main`; commit; push
 
 <button onclick="window.print()">`Print Button`</button>

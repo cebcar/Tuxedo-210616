@@ -9,13 +9,18 @@ At this time, its facets are:
 <br/><br/>
 - ZenHub
   - Kanban boards for project and issue management
-  - Roadmaps and Projects for a higher-level view of product development
+  - Roadmaps, Initiatives and Epics/Projects for a high-level view of product development
+    - in ZenHub, Initiatives are shown as groups of Projects with no content.
+      - we use Epics with label Initiative to support that planning level
   - Projects and Epics for planning based on Feature development
-  - Releases and Milestones for time-based planning
+  - Issues with IntelliJ Tasks for implementing Feature development
+  - Releases and Milestones/Sprints for time-based planning
 <br/><br/>
 - IntelliJ IDE
   - extensive build tools for all expected coding and documentation requirements
-  
+
+## Tasks
+
 ### Create Repo Project
 
 - create a new GitHub repository; see [Create New Repository](../tools/GitHub.md#create-new-repository)

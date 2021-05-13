@@ -17,6 +17,25 @@ WebApp @ [ZenHub](https://zenhub.com)
 ### ZenHub Shortcuts
 
 ## Using ZenHub
+We use ZenHub Workspaces to plan and manage our work.
+
+We have
+
+  - high-level planning with Epics, Initiatives, Releases, and Roadmaps<br/>
+
+    and
+
+  - sprint-level planning, with Epics, Issues, Milestones and Sprints<br/>
+
+    connecting via
+
+  - ZenHub Roadmaps and GitHub/ZenHub Epics
+
+Themes could also be used to identify areas of focus, and would be represented by labels on Epics.
+
+We use primarily single-repository workspaces
+- additional repositories may be temporary added as needed for specific short tasks
+  - multiple-repo workspaces complicate addition of issues to the correct repo
 
 ### ZenHub Workspaces
 

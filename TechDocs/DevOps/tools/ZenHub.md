@@ -49,7 +49,7 @@ We use primarily single-repository workspaces
   - configure [Board Columns](../entities/Workspace.md#board-columns)
 
 ### Add Repo Project to ZenHub Workspace
-- if ZenHub Workspace for this project does not exist: [Create New ZenHub Workspace](#create-new-workspace)
+- if ZenHub Workspace for this project does not exist: [Create New Workspace](#create-new-workspace)
 - from Workspace @ zenhub.com
   - choose Workspace Switcher at top left (opposing arrows icon)
   - select [Repo Project](../entities/RepoProject.md) to add

@@ -25,4 +25,4 @@ At this time, its facets are:
 
 - create a new GitHub repository; see [Create New Repository](../tools/GitHub.md#create-new-repository)
 - add new project to a ZenHub Workspace; see [Add Repo Project to ZenHub Workspace](../tools/ZenHub.md#add-repo-project-to-zenhub-workspace)
-- open new project in IntelliJ; see [IntelliJ: Open Repository as Project](../tools/IntelliJ.md#open-repository-as-project)
+- open new project in IntelliJ; see [Open Repository as Project](../tools/IntelliJ.md#open-repository-as-project)

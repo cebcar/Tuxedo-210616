@@ -14,11 +14,11 @@
       - ***Update &lt;workingBranch&gt;***
       - while **push branch** {
         - while **commit** {
-           - verify correct active branch
-           - while **cache** {
-             - test / code / test
-             - diff local changes
-             - add changed files as indicated (ocA)
+          - verify correct active branch
+          - while **cache** {
+            - test / code / test
+            - diff local changes
+            - add changed files as indicated (ocA)
           - } **cache**
           - Inspect
           - Compare with original (diff)
@@ -27,6 +27,7 @@
       - } **push branch**: on &lt;branch&gt;: Compare With &lt;remote&gt;; push &lt;branch&gt;
 <br/><br/>
     - ***Update &lt;workingBranch&gt;***
+    - (*Pull Request goes here*)
     - } **merge to `main`** *merge &lt;branch&gt; into main line of development*
       - checkout main; preview merge: &lt;branch-to-merge&gt;: Show Differences
       - merge to main: `git merge --no-ff &lt;branch&gt;`

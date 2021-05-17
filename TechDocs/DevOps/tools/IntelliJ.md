@@ -63,7 +63,7 @@
     *replace rcA with scA; scA conflicts with a Terminal shortcut and opens Terminal*
     - Help | Find Action | rcA; remove scA
 
-#### Quick Lists
+#### Activate Quick Lists
 - VCS Workflow | rV |
 
 ### Editor

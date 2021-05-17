@@ -80,26 +80,33 @@
   - Markdown: set from HTML
  
 #### File and Code Templates
-- ccTool
-```
-# ${NAME}
+- tolwp (tool with profile)
+  - with $INDENT$=(non-breaking space)x8
+    ```markdown
+      # $TOOL_NAME$
+      [$TOOL_NAME$ Profile](#$TOOL_NAME$-profile)
+      $INDENT$*$BLURB$*<br/>
+      ## Tool $TOOL_NAME$
+      
+      $END$<br/> krista can't test it here beca this file opens at oneuse it won't fit this file
+      
+      ## *$TOOL_NAME$ Profile*
+      $INDENT$$TOOLTYPE$ @ $LOCATION$<br/>$INDENT%*$BLURB$*<br/>
+      
+      **Version**: $VERSION$<br/>
+      **Source**: $SOURCE$<br/>
+      **Obtained**: $METHOD$; $DATE_PRICE$<br/>
+      **License**: $LICENSE$<br/>
+      **Critical Data**: $CRITICALDATA$<br/>
+      **Installation**: $INSTALLATION$<br/>
+      **Documentation**: $DOCUMENTATION$<br/>
+      
+      ### $TOOL_NAME$ Configuration
+      ### $TOOL_NAME$ Automation
+      ### $TOOL_NAME$ Shortcuts
+      ### $TOOL_NAME$ Alternatives Considered 
+    ```
 
-## Tool ${NAME}
-*${BLURB}*<br/>
-${TOOLTYPE} @ ${LOCATION}<br/>
-  - **Version**: ${VERSION}<br/>
-  - **License**: ${LICENSE}<br/>
-  - **Critical Data**: ${CRITICAL-DATA-LOCATION}<br/>
-  - **Source**: ${SOURCE}<br/>
-  - **Installation**: %<br/>
-  
-### ${NAME} **Configuration**: %<br/>
-### ${NAME} **Customization &amp; Automation**: %<br/>
-### ${NAME} **Shortcuts**: %<br/>
-
-## Using ${NAME}<br/>
-
-```
 #### Proofreading
 ##### for Documentation Files (*.md, *.html)
 - *disable checks inconsistent with our technical writing style*

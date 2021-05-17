@@ -187,6 +187,15 @@ ${TOOLTYPE} @ ${LOCATION}<br/>
 - General: provide credentials to connect to GitHub project; test
 - commit message: &lt;pr&gt;#${number}-${summary}| 
 
+### Dialogs
+#### Print
+- Settings
+  - show border: off
+- Header and Footer
+  - add "$DATE$ $TIME$" to beginning of footer
+- Advanced
+  - margins: .75 bottom to allow for footer; rest .5
+
 ## IntelliJ Customization &amp; Automation
 
 ## IntelliJ Keymap Customization

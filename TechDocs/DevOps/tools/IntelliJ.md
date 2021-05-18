@@ -39,6 +39,7 @@
   - Fetch
   - Push...
   - Merge Changes...
+  - Show History
   - Put Label...
   - Stash Changes...
   - Unstash Changes...
@@ -62,7 +63,7 @@
     *replace rcA with scA; scA conflicts with a Terminal shortcut and opens Terminal*
     - Help | Find Action | rcA; remove scA
 
-#### Quick Lists
+#### Activate Quick Lists
 - VCS Workflow | rV |
 
 ### Editor
@@ -79,26 +80,33 @@
   - Markdown: set from HTML
  
 #### File and Code Templates
-- ccTool
-```
-# ${NAME}
+- tolwp (tool with profile)
+  - with $INDENT$=(non-breaking space)x8
+    ```markdown
+      # $TOOL_NAME$
+      [$TOOL_NAME$ Profile](#$TOOL_NAME$-profile)
+      $INDENT$*$BLURB$*<br/>
+      ## Tool $TOOL_NAME$
+      
+      $END$<br/> krista can't test it here beca this file opens at oneuse it won't fit this file
+      
+      ## *$TOOL_NAME$ Profile*
+      $INDENT$$TOOLTYPE$ @ $LOCATION$<br/>$INDENT%*$BLURB$*<br/>
+      
+      **Version**: $VERSION$<br/>
+      **Source**: $SOURCE$<br/>
+      **Obtained**: $METHOD$; $DATE_PRICE$<br/>
+      **License**: $LICENSE$<br/>
+      **Critical Data**: $CRITICALDATA$<br/>
+      **Installation**: $INSTALLATION$<br/>
+      **Documentation**: $DOCUMENTATION$<br/>
+      
+      ### $TOOL_NAME$ Configuration
+      ### $TOOL_NAME$ Automation
+      ### $TOOL_NAME$ Shortcuts
+      ### $TOOL_NAME$ Alternatives Considered 
+    ```
 
-## Tool ${NAME}
-*${BLURB}*<br/>
-${TOOLTYPE} @ ${LOCATION}<br/>
-  - **Version**: ${VERSION}<br/>
-  - **License**: ${LICENSE}<br/>
-  - **Critical Data**: ${CRITICAL-DATA-LOCATION}<br/>
-  - **Source**: ${SOURCE}<br/>
-  - **Installation**: %<br/>
-  
-### ${NAME} **Configuration**: %<br/>
-### ${NAME} **Customization &amp; Automation**: %<br/>
-### ${NAME} **Shortcuts**: %<br/>
-
-## Using ${NAME}<br/>
-
-```
 #### Proofreading
 ##### for Documentation Files (*.md, *.html)
 - *disable checks inconsistent with our technical writing style*
@@ -184,7 +192,16 @@ ${TOOLTYPE} @ ${LOCATION}<br/>
 - add Server GitHub
 - connect to server GitHub
 - General: provide credentials to connect to GitHub project; test
-- commit message: &lt;project&gt;#${number}-${summary}| 
+- commit message: &lt;pr&gt;#${number}-${summary}| 
+
+### Dialogs
+#### Print
+- Settings
+  - show border: off
+- Header and Footer
+  - add "$DATE$ $TIME$" to beginning of footer
+- Advanced
+  - margins: .75 bottom to allow for footer; rest .5
 
 ## IntelliJ Customization &amp; Automation
 

@@ -13,8 +13,8 @@
 <br/><br/>
       - ***Update &lt;workingBranch&gt;***
       - while **push branch** {
+      - verify matching active branch
         - while **commit** {
-          - verify correct active branch
           - while **cache** {
             - test / code / test
             - diff local changes

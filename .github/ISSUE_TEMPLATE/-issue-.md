@@ -1,6 +1,6 @@
 ---
 name: "[ISSUE]"
-about: basic new issue template with headints
+about: template for Structured Issue
 title: ''
 labels: ''
 assignees: ''

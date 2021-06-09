@@ -11,24 +11,23 @@
 
 - custom named Preferences Profiles are available for groups of settings
   - use GitHub organization name `cebcar` to name custom profiles
-- (for now) notation '^^' denotes settings that needed to be reset for new project DevOps
 
 ### Appearance & Behavior
 #### Scopes
-^^
 
 *all scopes are shared*
 - docs
-   - file:*.md || file:*.html
+   - file:*.md||file:*.html
 - scripts
   - file:*.zsh
 - config
   - file:*.xml
-  - file:*.iml
-  - files:.gitignore .gitconfig
+  - ||file:*.iml
+  - ||.gitignore||.gitconfig
   - &&!file:*/workspace.xml (!: exclude)
 - not included in any scope
   - LICENSE
+  - gitignore.txt (legacy)
 
 #### Quick Lists
 - VCS Workflow
@@ -40,6 +39,7 @@
   - Fetch
   - Push...
   - Merge Changes...
+  - Show History
   - Put Label...
   - Stash Changes...
   - Unstash Changes...
@@ -63,7 +63,7 @@
     *replace rcA with scA; scA conflicts with a Terminal shortcut and opens Terminal*
     - Help | Find Action | rcA; remove scA
 
-#### Quick Lists
+#### Activate Quick Lists
 - VCS Workflow | rV |
 
 ### Editor
@@ -80,26 +80,33 @@
   - Markdown: set from HTML
  
 #### File and Code Templates
-- ccTool
-```
-# ${NAME}
+- tolwp (tool with profile)
+  - with $INDENT$=(non-breaking space)x8
+    ```markdown
+      # $TOOL_NAME$
+      [$TOOL_NAME$ Profile](#$TOOL_NAME$-profile)
+      $INDENT$*$BLURB$*<br/>
+      ## Tool $TOOL_NAME$
+      
+      $END$<br/> krista can't test it here beca this file opens at oneuse it won't fit this file
+      
+      ## *$TOOL_NAME$ Profile*
+      $INDENT$$TOOLTYPE$ @ $LOCATION$<br/>$INDENT%*$BLURB$*<br/>
+      
+      **Version**: $VERSION$<br/>
+      **Source**: $SOURCE$<br/>
+      **Obtained**: $METHOD$; $DATE_PRICE$<br/>
+      **License**: $LICENSE$<br/>
+      **Critical Data**: $CRITICALDATA$<br/>
+      **Installation**: $INSTALLATION$<br/>
+      **Documentation**: $DOCUMENTATION$<br/>
+      
+      ### $TOOL_NAME$ Configuration
+      ### $TOOL_NAME$ Automation
+      ### $TOOL_NAME$ Shortcuts
+      ### $TOOL_NAME$ Alternatives Considered 
+    ```
 
-## Tool ${NAME}
-*${BLURB}*<br/>
-${TOOLTYPE} @ ${LOCATION}<br/>
-  - **Version**: ${VERSION}<br/>
-  - **License**: ${LICENSE}<br/>
-  - **Critical Data**: ${CRITICAL-DATA-LOCATION}<br/>
-  - **Source**: ${SOURCE}<br/>
-  - **Installation**: %<br/>
-  
-### ${NAME} **Configuration**: %<br/>
-### ${NAME} **Customization &amp; Automation**: %<br/>
-### ${NAME} **Shortcuts**: %<br/>
-
-## Using ${NAME}<br/>
-
-```
 #### Proofreading
 ##### for Documentation Files (*.md, *.html)
 - *disable checks inconsistent with our technical writing style*
@@ -176,17 +183,25 @@ ${TOOLTYPE} @ ${LOCATION}<br/>
 */TODO/ extraneous backslashes sometimes appear in Tools content*
 
 #### Tasks
-
 - Changelist name format: ${project}-#${id} ${summary}
 - Feature branch name format: &lt;pr&gt;${number}-${summary}
   - [x] Lowercased
   - replace spaces with '-'
 
-##### Servers: server GitHub
+##### Tasks: Servers: server GitHub
 - add Server GitHub
 - connect to server GitHub
 - General: provide credentials to connect to GitHub project; test
-- Commit Message: &lt;pr&gt;${number}-${summary}
+- commit message: &lt;pr&gt;#${number}-${summary}| 
+
+### Dialogs
+#### Print
+- Settings
+  - show border: off
+- Header and Footer
+  - add "$DATE$ $TIME$" to beginning of footer
+- Advanced
+  - margins: .75 bottom to allow for footer; rest .5
 
 ## IntelliJ Customization &amp; Automation
 
@@ -261,6 +276,13 @@ Features Include:
 - from Preferences : Tools : Tasks : Servers :
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
+  
+#### configure VCS-related tools
+- configure [Tools: Tasks](#tasks)
+- configure [Tools: Servers: server GitHub][Tools: Tasks](#tasks-servers-server-github)
+
+#### configure Scopes
+- configure  [Appearance &amp; Behavior : Scopes](#scopes)
 
 #### commit to Version Control
 - Tag and Commit

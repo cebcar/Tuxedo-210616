@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="config" pattern="file:*.xml||file:*.iml||.gitignore||.gitconfig&amp;&amp;!file:*workspace.xml" />
+</component>

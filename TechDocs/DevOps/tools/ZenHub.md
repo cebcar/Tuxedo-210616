@@ -17,6 +17,25 @@ WebApp @ [ZenHub](https://zenhub.com)
 ### ZenHub Shortcuts
 
 ## Using ZenHub
+We use ZenHub Workspaces to plan and manage our work.
+
+We have
+
+  - high-level planning with Epics, Initiatives, Releases, and Roadmaps<br/>
+
+    and
+
+  - sprint-level planning, with Epics, Issues, Milestones and Sprints<br/>
+
+    connecting via
+
+  - ZenHub Roadmaps and GitHub/ZenHub Epics
+
+Themes could also be used to identify areas of focus, and would be represented by labels on Epics.
+
+We use primarily single-repository workspaces
+- additional repositories may be temporary added as needed for specific short tasks
+  - multiple-repo workspaces complicate addition of issues to the correct repo
 
 ### ZenHub Workspaces
 
@@ -30,7 +49,7 @@ WebApp @ [ZenHub](https://zenhub.com)
   - configure [Board Columns](../entities/Workspace.md#board-columns)
 
 ### Add Repo Project to ZenHub Workspace
-- if ZenHub Workspace for this project does not exist: [Create New ZenHub Workspace](#create-new-workspace)
+- if ZenHub Workspace for this project does not exist: [Create New Workspace](#create-new-workspace)
 - from Workspace @ zenhub.com
   - choose Workspace Switcher at top left (opposing arrows icon)
   - select [Repo Project](../entities/RepoProject.md) to add

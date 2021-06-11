@@ -22,10 +22,13 @@ shell tool @ /usr/bin/git<br/>
 ### **Git Shortcuts**<br/>
 
 ## Using Git<br/>
-### Tag
+
+### Tagging
+#### Tag
 - on clean master branch:
   - create annotated tag (requires comment)
   > git tag -a &lt;tagName&gt; -m &lt;comment&gt;
 
-<!--- \todo incorporate -->
-`git push --set-upstream (-u) origin &lt;branch&gt;`
+### Working with Remote Branches
+#### Push Remote Branch
+> git push --set-upstream (-u) origin &lt;branch&gt;

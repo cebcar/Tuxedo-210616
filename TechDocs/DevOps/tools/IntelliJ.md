@@ -277,6 +277,8 @@ Features Include:
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
   
+#### add module .idea
+
 #### configure VCS-related tools
 - configure [Tools: Tasks](#tasks)
 - configure [Tools: Servers: server GitHub][Tools: Tasks](#tasks-servers-server-github)
@@ -286,7 +288,7 @@ Features Include:
 
 #### commit to Version Control
 - Tag and Commit
-  - add annotated tag, normally "vYY.0.1" for a new project, with message
+  - add annotated tag, normally "vYYMM.0.1" for a new project, with message
 - commit; push
   
 ## Special Documentation Files
